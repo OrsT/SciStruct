@@ -1,0 +1,49 @@
+MATLAB FS11 – Research Plan
+The effect of social status on opinion formation in scientific research
+
+
+
+Document Version: 1 
+Group Name: (need to think on this)
+Group participants names: Örs, Taylan
+
+
+General Introduction
+Opinion formation dynamics in general is a well studied area in sociological modeling [1, 2] and formation and spread of scientific ideas constitute a big part of this field [3, 4]. The interest in this field lies mainly in the desire to develop a better framework (scientific or general) for ideas to evolve and spread. 
+ 
+The aim of this work is to investigate the effect of different statuses (education, experience, past success) in the scientific community on the formation and spreading of the ideas and scientific trends. The current structure of declaring scientific opinions (i.e. peer reviewing process, meetings, personal communications) will be modeled to estimate the effect of editing, reviewing and global publishing.
+
+The Model
+The proposed model will have similarities to the model discussed by Bornholdt et al. [4] with a change in the structure of the society.  This model will assume a hierarchical structure consisting of different “classes” of researchers (graduate and post-graduate students, “regular” professors and highly influential researchers as editors and reviewers). The agents will also have personal traits as creativity (to increase the chance of forming a new idea) and “stubbornness” (tendency to stick to earlier personal ideas and trends). An initial distribution of ideas (e.g. a ruling trend, competing major opinions, etc.) will be modified in two ways: 
+
+1.  Global Network Mechanism (peer reviewed publishing, meetings)
+a)  An agent comes up with a new idea.
+b)  If it can convince some fraction (e.g. 80%) of it's neighbors then it submits the idea to one of the editors who then forwards it to (highly influential) reviewers. 
+c)  3 referees will decide on the acceptance of the idea (for publication not necessarily the idea itself personally) according to creativity and stubbornness of the reviewer and global strength of the earlier ideas.
+ If accepted, a global boost on the likelihood of the spreading of the idea and an increased influence factor for its originator will be taken into account.
+ If rejected, it will lower both the influence of the idea and the creator.
+
+2. Neighbor Interaction Mechanism (meetings, personal communication)
+In the meantime evolution of idea spreading based on (first and second order) neighbor interactions only (as a competing process) will be observed.
+
+Fundamental Questions
+At the end of the experiment the answers to the following questions will be addressed: 
+
+ How fast the new ideas are spread? How fast the trends are renewed?
+ How does creativity and stubbornness influence the dynamics? 
+ What is the overall influence of the high profile researchers and reviewers when compared to the neighbor interaction mechanism?  
+
+The independent variables for this model are the influence (status), creativity and stubbornness of the agents and the number of agents in the decision making process for the global network mechanism. The main variables to be measured are the number of new ideas that propagate globally (at a given time and overall) and the rate of trend change.
+
+Expected Results
+
+The rate of the creation of ideas is expected to be strongly dependent on the number of creative individuals and the rate of spreading (and trend changing) is expected to be more influenced by the overall stubbornness of the agents and the strength of existing global trends. The number and the mentioned personal traits of reviewers should be a critical factor in determining the preference of the two mechanisms discussed for propagation of ideas. 
+
+References 
+1.	Hegselmann, R. and U. Krause, Opinion dynamics and bounded confidence: models, analysis and simulation. Jasss-the Journal of Artificial Societies and Social Simulation, 2002. 5(3).
+2.	Holme, P. and M.E.J. Newman, Nonequilibrium phase transition in the coevolution of networks and opinions. Physical Review E, 2006. 74(5).
+3.	Bettencourt, L.M.A., et al., The power of a good idea: Quantitative modeling of the spread of ideas from epidemiological models. Physica a-Statistical Mechanics and Its Applications, 2006. 364: p. 513-536.
+4.	Bornholdt, S., M.H. Jensen, and K. Sneppen, Emergence and Decline of Scientific Paradigms. Physical Review Letters, 2011. 106(5).
+
+Research Methods
+For the global network mechanism an agent-based model will be used. For neighbor interactions a simple model with cellular automata might be considered. 
